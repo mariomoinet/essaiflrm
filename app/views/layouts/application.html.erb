@@ -2,15 +2,16 @@
 <html>
   <head>
     <title>FullRoom</title>
-    <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track'=> true %>
+    <%= csrf_meta_tags %>
+    <%= favicon_link_tag 'favicon.ico' %>
   </head>
 
   <body>
     <%= render 'layouts/navigation'%>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <%= render 'shared/message'%>
+
     <div class="container"><%= yield %></div>
   </body>
 </html>
