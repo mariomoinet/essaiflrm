@@ -7,11 +7,11 @@ Rails.application.routes.draw do
   get 'pages/home'
 resources :users, only: [ :show]
 resources :rooms
-resources :photos
 resources :rooms do
-
             resources :reservations, only: [:create]
-
    end
+resources :photos
+get '/preload' => 'reservations#preload'
+get '/preview' => 'reservations#preview'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
