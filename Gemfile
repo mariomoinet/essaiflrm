@@ -28,6 +28,9 @@ gem 'paperclip'
 gem 'toastr-rails'
 #rendre un peu moins degeulasse ac des logos
 gem "font-awesome-sass"
+#geolocalisation
+gem 'geocoder'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
