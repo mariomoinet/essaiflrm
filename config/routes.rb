@@ -9,6 +9,7 @@ resources :users, only: [ :show]
 resources :rooms
 resources :rooms do
             resources :reservations, only: [:create]
+            resources :reviews, only [:create, :destroy]
    end
 resources :photos
 get '/preload' => 'reservations#preload'
