@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @rooms = Room.order("RANDOM()")
   end
   def search
       if params[:search].present? && params[:search].strip != ""
