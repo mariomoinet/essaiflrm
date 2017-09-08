@@ -15,6 +15,7 @@
 //= require bootstrap-sprockets
 //= require rails-ujs
 //= require toastr
+//= require rails-timeago-all
 //= require_tree .
 toastr.options = {
   "positionClass": "toast-bottom-right"

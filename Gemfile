@@ -35,6 +35,8 @@ gem 'jquery-ui-rails'
 gem 'ratyrate'
 #barre de recherche
 gem 'ransack'
+#
+gem 'rails-timeago'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes

@@ -1,16 +1,16 @@
 class PagesController < ApplicationController
   def home
-    @rooms = Room.order("RANDOM()")
+    @rooms = Room.order("RANDOM()").limit(3)
   end
   def search
       if params[:search].present? && params[:search].strip != ""
-         session[:aiirbnb_search] = params[:search]
+         session[:FullRoom_search] = params[:search]
       end
 
       arrResult = Array.new
 
-      if session[:aiirbnb_search] && session[:aiirbnb_search] != ""
-         @rooms_address = Room.where(active: true).near(session[:aiirbnb_search], 5, order:'distance')
+      if session[:FullRoom_search] && session[:FullRoom_search] != ""
+         @rooms_address = Room.where(active: true).near(session[:FullRoom_search], 5, order:'distance')
       else
          @rooms_address = Room.where(active: true).all
       end
