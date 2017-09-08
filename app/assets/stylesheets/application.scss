@@ -237,64 +237,86 @@ input[type="checkbox"]:checked:before {
 .panel-heading.preview img {
   width: 100%;
 }
+
 .equipments li {
-        margin-bottom: 10px;
-        list-style-type: none;
+  margin-bottom: 10px;
+  list-style-type: none;
 }
- .text-line-through {
-      text-decoration: line-through
- }
- .reservation-table td {
 
-        width: 100%;
+.text-line-through {
+  text-decoration: line-through;
+}
 
-        border: 1px solid #dce0e0;
-
-        padding: 10px;
-
- }
-
-
- .wide {
-
+.reservation-table td {
   width: 100%;
+  border: 1px solid #dce0e0;
+  padding: 10px;
+}
 
-  }
+.wide {
+  width: 100%;
+}
 
+.price_tag {
+  background-color: #606567;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
 
- .price_tag {
-
-        background-color: #606567;
-
-        color: #fff;
-
-        font-size: 20px;
-
-        padding: 10px;
-
-        margin-bottom: 10px;
-
-  }
-
-#message{
+#message {
   color: #FF0000;
   opacity: 0.8;
   display: block;
   text-align: center;
 }
-.home-link a, p{
 
-     color: #82888a;
+.home-link a,
+p {
+  color: #82888a;
+  text-decoration: none;
+}
 
-     text-decoration: none;
+.home-link:focus a,
+.home-link:hover a {
+  color: #82888a;
+  text-decoration: none;
+}
 
- }
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
 
+#sidebar {
+  float: right;
+  width: 340px;
+}
 
-.home-link:hover a, .home-link:focus a {
+#sidebar #widget {
+  width: 340px;
+  height: 600px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
 
-     color: #82888a;
+#article {
+  width: 560px;
+}
 
-     text-decoration: none;
+.search {
+  position: relative;
+}
 
- }
+.search input {
+  text-indent: 30px;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 12px;
+  left: 7px;
+  font-size: 15px;
+  opacity: 0.5;
+}
