@@ -17,5 +17,11 @@ get '/preview' => 'reservations#preview'
 get '/your_trips' => 'reservations#your_trips'
 get '/your_reservations' => 'reservations#your_reservations'
 get '/search' => 'pages#search'
+
+resources :conversations, only: [:index, :create] do
+
+       resources :messages, only: [:index, :create]
+
+ end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
